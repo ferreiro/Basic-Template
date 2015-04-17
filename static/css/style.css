@@ -48,12 +48,12 @@ button {
 /* 
 	Commun style for options links 
 */
-.headerOptionsLink {
-	color: red; 
+.headerOptionsLink { 
 	height: 40px;
 	min-width: 40px;
 	display: inline-block; 
 	vertical-align: middle;
+	position: relative;
 	/* background: blue; */  /* Debug mode */
 }
 .headerOptionsLink a ,
@@ -63,15 +63,46 @@ button {
 } 
 .headerOptionsLink a span:before {
 	font-size: 40px; /* Icon size */
+	color: #bd2e2e !important;
 }
 .headerOptionsLink a p {
 	display: none; /* Hide text for mobiles screen */
 }
-/* 	
-	Specific styles for header options linke
-*/
+/* 	Specific styles for header options link */
 .mobileMenuLink {
-	background: #000;
+	/* background: #000; */ /* Debug mode */
+	color: #bd2e2e !important; 
+}
+.mobileMenuButton {
+	width: 100%;
+	height: 100%; 
+	cursor: pointer;   
+	border: 0;
+	background: transparent;
+}
+.mobileMenuLink span,
+.mobileMenuLink span:before,
+.mobileMenuLink span:after {
+	/* background: #000; */ /* Debug mode */
+	width: 100%;
+	height: .35em;
+	content: '';
+	left: 0;
+	right: 0;
+	position: absolute;
+	background: #bd2e2e !important;
+	-webkit-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
+	border-radius: 0.3em;
+}
+.mobileMenuLink span {
+	top: 50%;
+}
+.mobileMenuLink span:before {
+	top: -10px;
+}
+.mobileMenuLink span:after { 
+	bottom: -10px;
 }
 
 .headerMenu { 
