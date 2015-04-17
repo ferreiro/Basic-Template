@@ -100,13 +100,12 @@ button {
 	left: 0;
 	right: 0;
 	position: absolute;
-	transition: all 500ms ease-in-out;
-	background: #bd2e2e !important;
+	transition: all 400ms ease-in-out;
+	background: #bd2e2e;
 	-webkit-border-radius: 0.3em;
 	-moz-border-radius: 0.3em;
 	border-radius: 0.3em;
-
-}
+} 
 .mobileMenuLink span {
 	top: 50%;
 }
@@ -118,13 +117,19 @@ button {
 }
 
 .pressed span {
-	background-color: transparent;
+	background: transparent;
 }
 .pressed span:before {
 	top: 0;
+	-ms-transform: rotate(-45deg); /* IE 9 */
+	-webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+	transform: rotate(-45deg);
 } 
 .pressed span:after {
 	bottom: 0;
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+	transform: rotate(45deg);
 }
 
 /* Header Menu, for mobiles */
