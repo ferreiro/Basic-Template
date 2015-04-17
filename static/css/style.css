@@ -41,6 +41,14 @@ button {
 	background: #f4f4f4;
 	display: inline-block;
 }
+.HeaderLogoLink {
+	width: 100%; 
+	height: 100%; 
+	display: block;
+}
+.HeaderLogoImage {
+	background: url();
+}
 .headerOptions {
 	float: right;
 	height: 40px; 
