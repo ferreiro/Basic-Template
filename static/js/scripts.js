@@ -4,5 +4,5 @@ var mobileMenu = $('#js-navbar-menu'),
 
 mobileMenu.click(function() {
 	mobileMenu.toggleClass('pressed');
-	menu.toggle(0);
+	menu.slideToggle("fast");
 });
