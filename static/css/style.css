@@ -2,9 +2,110 @@
 	Write the basic stuff here.
 	Viewports and so. Standarize this.
 */
+	
+body {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	font-size: 16px;
+	color: #222;
+}
+h1, h2, h3, h4, h5, p, a {
+	color: #222;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+button {
+	margin: 0;
+	padding: 0;
+	list-style: none; 
+}
+
+/** HEADER **********/
+
+.header {
+	padding: .5em 1em;
+	padding-top: 0.7em;
+	background: #fff;
+	border-bottom: 1px solid #EFEFEF;
+}
+.headerLogo {
+	width: 150px;
+	height: 40px;
+	background: #f4f4f4;
+	display: inline-block;
+}
+.headerOptions {
+	float: right;
+	height: 40px; 
+}
+/* 
+	Commun style for options links 
+*/
+.headerOptionsLink {
+	color: red; 
+	height: 40px;
+	min-width: 40px;
+	display: inline-block; 
+	vertical-align: middle;
+	background: blue; /* Debug mode */
+}
+.headerOptionsLink a ,
+.headerOptionsLink a span {
+	display: inline-block;
+	width: 100%; height: 100%; 
+} 
+.headerOptionsLink a span:before {
+	font-size: 40px; /* Icon size */
+}
+.headerOptionsLink a p {
+	display: none; /* Hide text for mobiles screen */
+}
+/* 	
+	Specific styles for header options linke
+*/
+.mobileMenuLink {
+	background: #000;
+}
+
+.headerMenu { 
+	display: none; /* Hide menu for mobiles */
+	padding: 1em 0;
+	margin-top: 0.5em;
+	border-top: 1px solid #EFEFEF;
+}
+
+	/* MEDIA QUERIES FOR BASIC TEMPLATE */
+	/* SMARTPHONES PORTRAIT */
+	@media only screen and (min-width: 300px) {
 
 
-	/* TODO */
+	}
+
+	/* SMARTPHONES LANDSCAPE */
+	@media only screen and (min-width: 480px) {
+
+
+	}
+
+	/* TABLETS PORTRAIT */
+	@media only screen and (min-width: 768px) {
+
+
+	}
+
+
+	/* TABLET LANDSCAPE / DESKTOP */
+	@media only screen and (min-width: 1024px) {
+
+
+	}   
 
 
 /*
