@@ -54,7 +54,7 @@ button {
 	min-width: 40px;
 	display: inline-block; 
 	vertical-align: middle;
-	background: blue; /* Debug mode */
+	/* background: blue; */  /* Debug mode */
 }
 .headerOptionsLink a ,
 .headerOptionsLink a span {
