@@ -25,6 +25,8 @@ button {
 	margin: 0;
 	padding: 0;
 	list-style: none; 
+	border: 0;
+	outline: 0;
 }
 
 /** HEADER **********/
@@ -98,10 +100,12 @@ button {
 	left: 0;
 	right: 0;
 	position: absolute;
+	transition: all 500ms ease-in-out;
 	background: #bd2e2e !important;
 	-webkit-border-radius: 0.3em;
 	-moz-border-radius: 0.3em;
 	border-radius: 0.3em;
+
 }
 .mobileMenuLink span {
 	top: 50%;
@@ -113,12 +117,27 @@ button {
 	bottom: -10px;
 }
 
+.pressed span {
+	background-color: transparent;
+}
+.pressed span:before {
+	top: 0;
+} 
+.pressed span:after {
+	bottom: 0;
+}
+
+/* Header Menu, for mobiles */
+
 .headerMenu { 
-	display: none; /* Hide menu for mobiles */
+	/* display: none; */ /* Hide menu for mobiles */
 	padding: 1em 0;
 	margin-top: 0.5em;
 	border-top: 1px solid #EFEFEF;
 }
+
+
+
 
 	/* MEDIA QUERIES FOR BASIC TEMPLATE */
 	/* SMARTPHONES PORTRAIT */
