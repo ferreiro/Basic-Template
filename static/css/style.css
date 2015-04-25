@@ -219,6 +219,21 @@ button {
 .footerInt {
 	/* Nothing on the mobile */
 }
+.footerLogo {
+	width: 150px;
+	height: 40px;
+	background: #f4f4f4;
+	display: inline-block;
+	margin-bottom: 1em;
+}
+.footerLogoLink {
+	width: 100%; 
+	height: 100%; 
+	display: block;
+}
+.footerLogoImage {
+	/* background: url(); */
+}
 .footerBlock {
 	display: block;
 	/* background: blue; */
