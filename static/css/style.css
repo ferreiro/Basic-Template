@@ -36,6 +36,7 @@ button {
 	padding-top: 0.7em;
 	background: #fff;
 	border-bottom: 1px solid #EFEFEF;
+	position: relative;
 }
 .headerLogo {
 	width: 150px;
@@ -49,7 +50,7 @@ button {
 	display: block;
 }
 .HeaderLogoImage {
-	background: url();
+	/* background: url(); */
 }
 .headerOptions {
 	float: right;
@@ -74,6 +75,11 @@ button {
 .headerOptionsLink a span:before {
 	font-size: 40px; /* Icon size */
 	color: #bd2e2e !important;
+}
+.searchLink a span:before {
+	font-size: 32px; /* Icon size */ 
+	margin-top: 4px;
+	display: block;
 }
 .headerOptionsLink a p {
 	display: none; /* Hide text for mobiles screen */
@@ -131,6 +137,35 @@ button {
 	-ms-transform: rotate(45deg); /* IE 9 */
 	-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
 	transform: rotate(45deg);
+}
+
+/* Header Search, for mobiles */
+
+.headerSearch {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.HeaderSearchInput {
+	width: 100%;
+	height: 100%; 
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 1.1em;
+}
+.HeaderSearchInput {
+
 }
 
 /* Header Menu, for mobiles */
@@ -191,7 +226,16 @@ button {
 	/* TABLET LANDSCAPE / DESKTOP */
 	@media only screen and (min-width: 1024px) {
 
-
+		.headerMenu {
+			display: block;
+			background: red;
+			display: inline-block;
+		}
+		.nav li { 
+			width: auto;
+			display: inline-block;
+			text-align: center; 
+		}
 	}   
 
 

@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'website';
-	src:url('fonts/website.eot?u8ttwo');
-	src:url('fonts/website.eot?#iefixu8ttwo') format('embedded-opentype'),
-		url('fonts/website.woff?u8ttwo') format('woff'),
-		url('fonts/website.ttf?u8ttwo') format('truetype'),
-		url('fonts/website.svg?u8ttwo#website') format('svg');
+	src:url('fonts/website.eot?gtc5t7');
+	src:url('fonts/website.eot?#iefixgtc5t7') format('embedded-opentype'),
+		url('fonts/website.woff?gtc5t7') format('woff'),
+		url('fonts/website.ttf?gtc5t7') format('truetype'),
+		url('fonts/website.svg?gtc5t7#website') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,7 +23,11 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-profile:before {
+.icon-search:before {
+	content: "\e602";
+}
+
+.icon-user:before {
 	content: "\e601";
 }
 

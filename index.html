@@ -29,7 +29,7 @@
 
 		<div class="headerOptions">
 
-			<div class="headerOptionsLink extraLink"style="display:none;" >
+			<div class="headerOptionsLink extraLink" style="display:none;" >
 				<a href="#">
 					<span class="icon-upload"></span>
 					<p>
@@ -38,18 +38,19 @@
 				</a>
 			</div>
 
-			<div class="headerOptionsLink extraLink"style="display:none;" >
-				<a href="#">
-					<span class="icon-upload"></span>
+			<div class="headerOptionsLink searchLink" style="display: ;" >
+				<a href="#" id="js-navbar-search">
+					<span class="icon-search"></span>
 					<p>
 						Search
 					</p>
 				</a>
+
 			</div>
 
 			<div class="headerOptionsLink profileLink">
 				<a href="#">
-					<span class="icon-profile"></span>
+					<span class="icon-user"></span>
 					<p>
 						Access
 					</p>
@@ -65,6 +66,13 @@
 			</div>
 
 		</div><!-- End HeaderOptions -->
+
+		<div class="headerSearch">
+		<form action="http://music4deejays.com/" class="searchform" id="searchform" method="get" role="search" _lpchecked="1">
+			<input type="text" class="HeaderSearchInput" name="s" id="s" placeholder="Search song or artist" autocomplete="off">
+			<input type="submit" class="HeaderSearchSubmit" name="submit" id="searchsubmit" value=" ">
+		</form>
+		</div>
 
 		<nav class="headerMenu">
 			<ul class="nav">
