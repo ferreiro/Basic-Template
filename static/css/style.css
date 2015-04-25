@@ -8,6 +8,7 @@ body {
 	padding: 0;
 	background: #fff;
 	background: #f4f4f4;
+	background: #fff;
 	font-size: 16px;
 	color: #222;
 	font-family: 'Roboto',Helvetica, sans-serif, Arial; 
@@ -34,14 +35,18 @@ button {
 /** HEADER **********/
 
 .header {
-	padding: .5em 1em;
+	width: 100%;
+	padding: .5em 0;
 	padding-top: 0.7em;
 	background: #fff;
 	border-bottom: 1px solid #EFEFEF;
-	position: relative;
+	position: fixed;
+	z-index: 10;
+	top: 0;
 }
 .headerInt {
 	/* nothing for mobile */
+	padding: 0 1em;
 }
 .headerLogo {
 	width: 150px;
@@ -245,6 +250,7 @@ button {
 **/
 .content { 
 	padding: 1.5em 1em;
+	margin-top: 55px;
 }
 .contentInt {
 	/* Nothing on the mobile */ 
@@ -411,6 +417,10 @@ button {
 			margin: 0;
 			vertical-align: top;
 			border: 0;
+		}
+
+		.headerSearch {
+			width: 185px;
 		}
 		.mobileMenuLink {
 			display: none; /* Hide Hamburguer icon */
