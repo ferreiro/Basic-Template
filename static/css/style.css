@@ -166,6 +166,7 @@ button {
 	padding: 0;
 	text-align: center;
 	font-size: 1.1em;
+	background: transparent !important;
 }
 .HeaderSearchInput {
 
@@ -282,12 +283,38 @@ button {
 		.footerBlock:nth-child(odd) {
 			/* float: right; */
 		}
-
 	}
 
 	/* TABLETS PORTRAIT */
 	@media only screen and (min-width: 768px) {
 
+
+		.searchLink {
+			display: none; /* Hide Search Top Button Icon */
+		}
+		.headerSearch {
+			width: 200px;
+			height: 40px;
+			float: right;
+			margin-right: 20px;
+			background:#ECECEC !important;
+			top: auto; bottom: auto; left: auto; right: auto; 
+			overflow: hidden;
+			display: inline-block !important;
+			position: relative !important;
+			vertical-align: top;
+			text-align: left !important; 
+			-webkit-border-radius: 30px;
+			-moz-border-radius: 30px;
+			border-radius: 30px;
+		}
+		.headerSearch input { 
+			text-align: left !important;
+			padding-left: 15px;
+		}
+		.headerSearch span {
+			display: none;
+		}
 
 	}
 
@@ -299,6 +326,10 @@ button {
 			width: 1015px;
 			margin: 0 auto;
 		}
+		.headerSearch { 
+			float: right; 
+		} 
+		/** Menu */
 		.headerMenu {
 			height: 40px;
 			display: inline-block !important; 

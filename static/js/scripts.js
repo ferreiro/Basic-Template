@@ -5,14 +5,14 @@ var mobileMenu = $('#js-navbar-menu'),
 	mobileSearchForm = $('.headerSearch'),
 	closeSearch = $('.headerSearchClose');
 
-mobileMenu.click(function() {
-	mobileSearchForm.hide("fast");
+mobileMenu.click(function() { 
 	mobileMenu.toggleClass('pressed');
 	menu.slideToggle("fast");
 });
 
 mobileSearch.click(function() {
 	menu.hide(0);
+	mobileMenu.removeClass('pressed');
 	mobileSearchForm.fadeToggle("fast");
 });
 
