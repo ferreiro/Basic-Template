@@ -38,6 +38,9 @@ button {
 	border-bottom: 1px solid #EFEFEF;
 	position: relative;
 }
+.headerInt {
+	/* nothing for mobile */
+}
 .headerLogo {
 	width: 150px;
 	height: 40px;
@@ -207,8 +210,45 @@ button {
 	font-weight: normal;
 }
 
-
-
+/** Footer **/
+.footer { 
+	display: block;
+	background: none repeat scroll 0% 0% #e7e7e7;
+	padding: 1em;
+}
+.footerInt {
+	/* Nothing on the mobile */
+}
+.footerBlock {
+	display: block;
+	/* background: blue; */
+	margin-bottom: 1em;
+}
+.footerBlock h4 {
+	width: 100%;
+	display: block;
+	font-size: 1em;
+	margin-bottom: 0.5em;
+}
+.footerBlock ul {
+	display: block;
+} 
+.footerBlock ul li { 
+	display: inline-block;
+	position: relative;
+	margin-right: 10px;
+} 
+.footerBlock ul li a {
+	width: 100%;
+	height: 100%;
+	display: block;
+} 
+.networksBlock ul li {
+	width: 40px;
+	height: 40px;
+	background: #006396;
+	border-radius:100%; 
+}
 
 	/* MEDIA QUERIES FOR BASIC TEMPLATE */
 	/* SMARTPHONES PORTRAIT */
@@ -219,7 +259,14 @@ button {
 
 	/* SMARTPHONES LANDSCAPE */
 	@media only screen and (min-width: 480px) {
-
+		.footerBlock {
+			width: 48.5% !important; 
+			display: inline-block;
+			vertical-align: top;
+		}
+		.footerBlock:nth-child(odd) {
+			float: right;
+		}
 
 	}
 
