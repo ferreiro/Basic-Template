@@ -85,7 +85,11 @@ button {
 	display: block;
 }
 .headerOptionsLink a p {
-	display: none; /* Hide text for mobiles screen */
+	display: none; /* Hide text for mobiles screen */ 
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-left: 7px;
+	color: #BD2E2E !important;
 }
 /* 	Specific styles for header options link */
 .mobileMenuLink {
@@ -288,7 +292,17 @@ button {
 	/* TABLETS PORTRAIT */
 	@media only screen and (min-width: 768px) {
  
-
+		.profileLink {
+			margin-right: 20px;
+		}
+		.profileLink span {
+			width: auto !important;
+		}
+		.profileLink p {
+			display: inline-block !important; 
+			vertical-align: top;
+			margin-top: 15px;
+		}
 		.searchLink {
 			display: none; /* Hide Search Top Button Icon */
 		}
@@ -351,8 +365,8 @@ button {
 		}
 		.nav li a {  
 			font-weight: 500;
-			padding: 14px 16px;
-			padding-bottom: 9px;
+			padding: 15px 16px;
+			padding-bottom: 8px;
 			letter-spacing: 0;
 			text-indent: 0; 
 		}
