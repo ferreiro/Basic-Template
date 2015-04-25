@@ -10,6 +10,7 @@ body {
 	background: #f4f4f4;
 	font-size: 16px;
 	color: #222;
+	font-family: 'Roboto',Helvetica, sans-serif, Arial; 
 }
 h1, h2, h3, h4, h5, p, a {
 	color: #222;
@@ -239,7 +240,28 @@ button {
 	font-weight: normal;
 }
 
-/** Footer **/
+/** 
+	Content 
+**/
+.content { 
+	padding: 1.5em 1em;
+}
+.contentInt {
+	/* Nothing on the mobile */ 
+}
+.contentLeft,
+.contentRight {
+	width: 100%;  
+	display: inline-block;
+	vertical-align: top;
+}  
+.contentRight {
+	margin-top: 1em;
+}
+
+/** 
+	Footer 
+**/
 .footer { 
 	display: block !important;
 	background: none repeat scroll 0% 0% #e7e7e7;
@@ -415,6 +437,28 @@ button {
 			padding: 0;
 			font-size: 1em;
 		}
+ 
+		/*
+		*	Content In
+		*/
+
+		.contentInt {
+			width: 1015px;
+			margin: 0 auto;
+			background: #fff;
+			padding: 1em;
+			display: block;
+			position: relative;
+		}
+ 		
+ 		.contentLeft {
+ 			width: 670px; 
+ 			margin-right: 1em;
+ 		}
+ 		.contentRight {
+ 			width: 320px; 
+ 			margin-top: 0;  
+ 		} 
 
 		/*
 		*	Footer
