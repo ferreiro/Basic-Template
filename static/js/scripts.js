@@ -2,7 +2,8 @@
 var mobileMenu = $('#js-navbar-menu'),
 	menu = $('.headerMenu'),
 	mobileSearch = $('#js-navbar-search'),
-	mobileSearchForm = $('.headerSearch');
+	mobileSearchForm = $('.headerSearch'),
+	closeSearch = $('.headerSearchClose');
 
 mobileMenu.click(function() {
 	mobileSearchForm.hide("fast");
@@ -13,4 +14,8 @@ mobileMenu.click(function() {
 mobileSearch.click(function() {
 	menu.hide(0);
 	mobileSearchForm.fadeToggle("fast");
+});
+
+closeSearch.click(function() {
+	mobileSearchForm.hide();
 });

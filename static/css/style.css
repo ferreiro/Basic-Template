@@ -167,7 +167,14 @@ button {
 .HeaderSearchInput {
 
 }
-
+.headerSearchClose {
+	position: absolute;
+	top: 50%; 
+	z-index: 10;
+	margin-top: -8px;
+	right: 20px;
+	cursor: pointer;
+}
 /* Header Menu, for mobiles */
 
 .headerMenu { 
