@@ -13,6 +13,9 @@ body {
 	color: #222;
 	font-family: 'Roboto',Helvetica, sans-serif, Arial; 
 }
+.bodyLocked {
+	overflow: hidden;	/** Used when menu is opened **/
+}
 h1, h2, h3, h4, h5, p, a {
 	color: #222;
 	margin: 0;
@@ -179,6 +182,7 @@ button {
 	font-size: 1.1em;
 	background: transparent !important;
 	z-index: 2;
+	outline: 0;
 }
 .HeaderSearchSubmit {
 	background: transparent;
@@ -271,6 +275,8 @@ button {
 .footer { 
 	display: block !important;
 	background: none repeat scroll 0% 0% #e7e7e7;
+	background: #f8f8f8;
+	border-top:1px solid #e7e7e7;
 	padding: 1em;
 }
 .footerInt {
@@ -316,10 +322,9 @@ button {
 	display: block;
 } 
 .networksBlock ul li {
-	width: 40px;
-	height: 40px;
-	background: #006396;
-	border-radius:100%; 
+	width: 20px;
+	height: 20px;
+	background: #cecece; 
 }
 
 	/* MEDIA QUERIES FOR BASIC TEMPLATE */
@@ -352,7 +357,7 @@ button {
 		.profileLink p {
 			display: inline-block !important; 
 			vertical-align: top;
-			margin-top: 15px;
+			margin-top: 13px;
 		}
 	}
 
@@ -369,10 +374,11 @@ button {
 		}
 		.headerSearch {
 			width: 300px;
-			height: 40px;
+			height: 38px;
 			float: right;
 			margin-right: 20px;
-			background:#ECECEC !important;
+			background:transparent !important; /* previous #ECECEC */
+			border: 2px solid #ECECEC;
 			top: auto; bottom: auto; left: auto; right: auto; 
 			overflow: hidden;
 			display: inline-block !important;
@@ -411,6 +417,7 @@ button {
 			margin: 0 auto;
 		}
 		.headerSearch { 
+			width: 179px;
 			float: right; 
 		} 
 		/** Menu */
@@ -421,10 +428,7 @@ button {
 			margin: 0;
 			vertical-align: top;
 			border: 0;
-		}
-
-		.headerSearch {
-			width: 185px;
+			margin-left: 10px;
 		}
 		.mobileMenuLink {
 			display: none; /* Hide Hamburguer icon */
@@ -465,12 +469,14 @@ button {
 			position: relative;
 		}
  		
- 		.contentLeft {
- 			width: 670px; 
+ 		.contentLeft,
+ 		.footerBlock:nth-child(even) {
+ 			width: 670px !important; 
  			margin-right: 1em;
  		}
- 		.contentRight {
- 			width: 320px; 
+ 		.contentRight,
+ 		.footerBlock:nth-child(odd) {
+ 			width: 320px !important; 
  			margin-top: 0;  
  		} 
 
