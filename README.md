@@ -1,5 +1,6 @@
 # Basic-Website-Structure
 
+<img align="center" width="49%" src="/static/images/previa.jpg">
 <img align="center" width="49%" src="/static/images/mobile.gif">
 
 All we know that there're some really cool frameworks like bootstrap or many others out there. However, I fell sometimes that for a certain projects I prefer to use my own stuff. 
