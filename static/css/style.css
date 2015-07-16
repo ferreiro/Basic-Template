@@ -264,7 +264,7 @@ button {
 .contentRight {
 	width: 100%;  
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: top; 
 }  
 .contentRight {
 	margin-top: 1em;
@@ -409,7 +409,7 @@ button {
 		}
 	}
 	/* TABLET LANDSCAPE / DESKTOP */
-	@media only screen and (min-width: 1040px) {
+	@media only screen and (min-width: 1070px) {
 		/*
 		*	Header 
 		*/

@@ -145,19 +145,48 @@
 
 	<section class="content">
 	<div class="contentInt">
-		 
+			
+		<style type="text/css">
+		.developersGuide {
+			padding-top:350px; 
+			text-align:center;
+			position: relative;
+		}
+		.developersGuide span { 
+			padding: 5px 0;
+			width: 120px; 
+			left: 50%;
+			right: 50%;
+			margin-top: -12px;
+			margin-left: -60px;
+			position: absolute;
+			background: #f9f9f9;
+			display: inline-block;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+		}
+		.developersGuide:before {
+			content: '';
+			background: #f9f9f9;
+			width: 100%;
+			height: 5px;
+			float: left;  
+		}
+		</style>
+
 		<section class="contentLeft">
-			<div style="width:100%; height:1000px; background:#fff;">
-				<p style="padding-top:350px; text-align:center;">
-					Left Content
+			<div style="width:100%; height:1000px;">
+				<p class="developersGuide">
+					<span>Left Content</span>
 				</p>
 			</div>
 		</section>
 
 		<section class="contentRight">
-			<div style="width:100%; height:1000px; background:#f8f8f8;">
-				<p style="padding-top:350px; text-align:center;">
-					Right Content
+			<div style="width:100%; height:1000px;">
+				<p class="developersGuide">
+					<span>Right Content</span>
 				</p>
 			</div>
 		</section>
