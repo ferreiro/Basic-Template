@@ -6,12 +6,6 @@ var mobileMenu = $('#js-navbar-menu'),
 	closeSearch = $('.headerSearchClose'),
 	content = $("body");
 
-
-	// Debug
-	setInterval( function() {
-		mobileMenu.click();
-	}, 2000);
-
 mobileMenu.click(function() { 
 	content.toggleClass("bodyLocked");
 	mobileMenu.toggleClass("pressed");
@@ -27,3 +21,9 @@ mobileSearch.click(function() {
 closeSearch.click(function() {
 	mobileSearchForm.hide();
 });
+/*
+// Debug
+setInterval( function() {
+	mobileMenu.click();
+}, 3000);
+*/
