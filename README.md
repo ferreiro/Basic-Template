@@ -1,4 +1,4 @@
-# Basic-Website-Structure
+# Basic website template
 
 All we know that there're some really cool frameworks like bootstrap or many others out there. However, I fell sometimes that for a certain projects I prefer to use my own stuff. 
 
