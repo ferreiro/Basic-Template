@@ -17,6 +17,6 @@ I'm starting this repo to create  a basic template for my websites: including mo
 - Basic content structure (left and right modules).
 - Basic Footer.
 
-### Feedback.
+### Feedback and future improvements.
  
-Fell free to use my code under MIT license. If you have some ideas and feedback, please, open an issue or write me an email: dividirporcero@gmail.com. Would be awesome to hear your ideas ;).
+You can use my code under MIT license. If you have some ideas and feedback, please, open an issue or write me an email: dividirporcero@gmail.com. Would be awesome to hear your ideas ;).
